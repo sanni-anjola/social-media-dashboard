@@ -1,0 +1,326 @@
+body {
+  background: #1e202a;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+body div.container {
+  width: 80%;
+  margin: 0.5em auto;
+}
+body div.container header {
+  display: flex;
+  align-content: center;
+  color: #8b97c6;
+}
+body div.container header div h1 {
+  color: white;
+  margin: 0;
+}
+body div.container header header p {
+  margin-top: 0;
+}
+body div.container header > p {
+  margin-left: auto;
+  align-self: center;
+}
+body div.container header > p span {
+  display: inline-block;
+  width: 2rem;
+  height: 0.8rem;
+  padding: 0.1rem;
+  background-color: #1db489;
+  border-radius: 20%/50%;
+  position: relative;
+}
+body div.container header > p span button {
+  background-color: #1e202a;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 0.1rem;
+  top: 0.1rem;
+  cursor: pointer;
+}
+body div.container header > p span button:focus {
+  outline: none;
+}
+body div.container main .social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+body div.container main .social section {
+  width: 24%;
+  margin-right: 5px;
+  color: #8b97c6;
+  background-color: #252a41;
+  cursor: pointer;
+}
+body div.container main .social section::before {
+  display: block;
+  content: "";
+  height: 3px;
+  border-top-left-radius: 5% 100%;
+  border-top-right-radius: 5% 100%;
+}
+body div.container main .social section.facebook::before {
+  background: deepskyblue;
+}
+body div.container main .social section.twitter::before {
+  background: #1ca0f2;
+}
+body div.container main .social section.instagram::before {
+  background: linear-gradient(#fdc468, #df4996);
+}
+body div.container main .social section.youtube::before {
+  background: #c4032a;
+}
+body div.container main .social section > div {
+  max-height: 10%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+body div.container main .social section > div img {
+  width: 10%;
+  height: 10%;
+  align-self: center;
+}
+body div.container main .social section > div p {
+  font-size: 0.6rem;
+  align-self: center;
+  margin-left: 4px;
+}
+body div.container main .social section:last-of-type {
+  margin-right: 0;
+}
+body div.container main .social section > h1 {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+body div.container main .social section > p:first-of-type {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+body div.container main .social section > p:last-of-type {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.4rem;
+}
+body div.container main .social section > p.up img, body div.container main .social section > p.down img {
+  width: 5%;
+  height: 5%;
+  align-self: center;
+}
+body div.container main .social section > p.up {
+  color: #1db489;
+  font-weight: bold;
+}
+body div.container main .social section > p.down {
+  color: #dc414c;
+  font-weight: bold;
+}
+body div.container div.overview div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+body div.container div.overview div section {
+  box-sizing: border-box;
+  width: 24%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  color: #8b97c6;
+  background-color: #252a41;
+  cursor: pointer;
+}
+body div.container div.overview div section:nth-child(4n+4) {
+  margin-right: 0;
+}
+body div.container div.overview div section div {
+  display: flex;
+  justify-content: space-between;
+  align-content: baseline;
+  margin-bottom: 0;
+}
+body div.container div.overview div section div h3 {
+  color: white;
+  margin: 0.2em 0;
+  font-size: 1em;
+}
+body div.container div.overview div section div img {
+  width: 10%;
+  height: 10%;
+  align-self: center;
+}
+body div.container div.overview div section div p {
+  font-size: 0.7rem;
+  align-self: center;
+}
+body div.container div.overview div section div > p.up img, body div.container div.overview div section div > p.down img {
+  width: 20%;
+  height: 20%;
+}
+body div.container div.overview div section div > p.up {
+  color: #1db489;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+body div.container div.overview div section div > p.down {
+  color: #dc414c;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+body.light {
+  background-color: #f5f7ff;
+  color: #1e202a;
+}
+body.light div.container header {
+  color: #f0f2fa;
+}
+body.light div.container header div h1 {
+  color: #1e202a;
+}
+body.light div.container header div p {
+  color: #aeb3cb;
+}
+body.light div.container header > p {
+  color: #aeb3cb;
+}
+body.light div.container header > p span {
+  background-color: #aeb3cb;
+}
+body.light div.container header > p span button {
+  background-color: white;
+  left: 1.3rem;
+}
+body.light div.container main .social section {
+  background-color: #f0f2fa;
+}
+body.light div.container main .social section > div {
+  color: #1e202a;
+}
+body.light div.container main .social section > div p {
+  color: #1e202a;
+}
+body.light div.container main .social section > h1 {
+  color: #1e202a;
+}
+body.light div.container div.overview h2 {
+  color: #aeb3cb;
+}
+body.light div.container div.overview div section {
+  color: #aeb3cb;
+  background-color: #f0f2fa;
+}
+body.light div.container div.overview div section div h3 {
+  color: #1e202a;
+}
+body.light div.container div.overview div section div p {
+  font-size: 0.7rem;
+  align-self: center;
+}
+body.light div.container div.overview div section div > p:first-of-type {
+  color: #1e202a;
+}
+body.light div.container div.overview div section div > p:last-of-type {
+  color: #1e202a;
+}
+body.light div.container div.overview div section div > p.up img, body.light div.container div.overview div section div > p.down img {
+  width: 20%;
+  height: 20%;
+}
+body.light div.container div.overview div section div > p.up {
+  color: #1db489;
+  font-size: 0.5rem;
+}
+body.light div.container div.overview div section div > p.down {
+  color: #dc414c;
+  font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 375px) {
+  body div.container header {
+    display: block;
+  }
+  body div.container header div h1 {
+    font-size: 1.5em;
+    color: white;
+    margin: 0;
+  }
+  body div.container header header p {
+    margin-top: 0;
+  }
+  body div.container header > p.mode {
+    width: 100%;
+    position: relative;
+  }
+  body div.container header > p.mode span {
+    position: absolute;
+    right: 0;
+  }
+  body div.container main .social {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  body div.container main .social section {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  body div.container div.overview div {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  body div.container div.overview div section {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  body div.container div.overview div section div {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-bottom: 0;
+  }
+  body div.container div.overview div section div h3 {
+    color: white;
+    margin: 0.2em 0;
+    font-size: 1em;
+  }
+  body div.container div.overview div section div img {
+    width: 10%;
+    height: 10%;
+    margin-left: auto;
+  }
+  body div.container div.overview div section div p {
+    font-size: 0.7rem;
+    margin-right: auto;
+  }
+  body div.container div.overview div section div > p.up img, body div.container div.overview div section div > p.down img {
+    width: 20%;
+    height: 20%;
+  }
+  body div.container div.overview div section div > p.up {
+    color: #1db489;
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+  body div.container div.overview div section div > p.down {
+    color: #dc414c;
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
